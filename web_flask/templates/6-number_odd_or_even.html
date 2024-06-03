@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <HEAD>
+        <TITLE>HBNB</TITLE>
+    </HEAD>
+    <BODY>
+	{# handle withespaces
+	{%- if ... %} strips before
+	{%- if ... -%} strips before and after
+	{%+ if ... %} preserves before
+	{%+ if ... -%} preserves before and strips after
+	remember that {% endif %} is treated separately	
+	#}
+	{%- if number % 2 == 0 -%}
+        <H1>Number: {{ number }} is even</H1>
+	{%- else -%}
+        <H1>Number: {{ number }} is odd</H1>
+	{% endif %}
+    </BODY>
+</HTML>
